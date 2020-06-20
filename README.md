@@ -4,11 +4,15 @@
 # mavenの準備(windows版)
 
 ・ダウンロード
+
 以下から、mavenをダウンロードして任意の場所に解凍します。
+
 https://maven.apache.org/download.cgi
 
 ・環境変数設定
-環境変数に、mavenのパスを追加しておきます。(必須ではないですが、便利かと)
+
+環境変数に、mavenのパスを追加しておきます。(必須ではないですが、full pathを入力するのがつらいので)
+
 例：C:\Users\xxxxx\Documents\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin
 
 ・maven-project作成
@@ -33,7 +37,8 @@ mvn archetype:generate ^
 ```
 
 あとは、各ソースを上書きしてパッケージ名など適宜修正してください。
-EditorはEclipseが楽でした。
+
+統合開発環境としてはEclipseが楽でした。
 
 
 # 実行方法(windows版)
