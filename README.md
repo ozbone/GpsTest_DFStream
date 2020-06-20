@@ -56,6 +56,7 @@ set BUCKET=%PROJECT%
 
 cd <pom.xmlがあるフォルダ>
 
+:: 以下でDF開始。料金が怖いので、maxNumWorkers=3にしています
 mvn compile exec:java -Dexec.mainClass=com.ozbone.gpstest.DfStream -Dexec.args="--project=%PROJECT% --stagingLocation=gs://%BUCKET%/staging/ --gcpTempLocation=gs://%BUCKET%/staging/tmp --runner=DataflowRunner --maxNumWorkers=3"
 
 cd ..
